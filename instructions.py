@@ -1,6 +1,8 @@
 """ Written by Joseph Surrey, 4/04/2023
 Updated 21/04/2023 to fix spelling error
 Updated 21/04/2023 to use .read to read instructions.txt
+Updated 23/04/2023 to add constants for text formatting
+
 Instructions function for Lucky Unicorn game
 """
 
@@ -16,10 +18,13 @@ def instructions():
           "By playing this game you are supporting Doctors without Borders")
     # ask if user has played before
     played_before = get_valid_input("Have you played this game before? (Y/N) ", str, ["Y", "N", "NO", "YES"], True)
+    print(SECTION_SEPARATOR)
     if played_before == "Y" or played_before == "YES":
         initial_payment()
     else:
         # print instructions if the user has not played before
         print(INSTRUCTIONS.read())
+        # Section separator
+        print(SECTION_SEPARATOR)
         # run initial_payment
         initial_payment()

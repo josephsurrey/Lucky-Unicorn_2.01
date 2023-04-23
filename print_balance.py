@@ -1,11 +1,14 @@
 """ Written by Joseph Surrey, 21/04/2023
 Edited 21/04/2023 to add functionality to remember how much the user spent at the start of the game
 to tell them how much they won/raised for charity
+Updated 23/04/2023 to add constants for text formatting
+
 Print balance function for Lucky Unicorn game
 """
 
 # import information from other files
 from check_for_sufficient_balance_to_continue import check_for_sufficient_balance_to_continue
+from setup import *
 
 
 def print_balance(balance, token, initial_payment):
@@ -19,6 +22,8 @@ def print_balance(balance, token, initial_payment):
         print("You didn't win anything this round. Try again!")
     # print the users remaining balance (rounded to 2 decimal places)
     print(f"You have ${balance:.2f} left")
+    # Section separator
+    print(SECTION_SEPARATOR)
     # check for sufficient balance to continue
     check_for_sufficient_balance_to_continue(balance, initial_payment)
 

@@ -3,6 +3,8 @@ Edited 21/04/2023 to add functionality to remember how much the user spent at th
 to tell them how much they won/raised for charity
 Edited 21/04/2023 so that user presses enter to start after the initial payment is made
 and not every round
+Updated 23/04/2023 to add constants for text formatting
+
 Initial payment function for Lucky Unicorn game
 """
 
@@ -19,5 +21,7 @@ def initial_payment():
     initial_payment = balance
     # prompt user to press enter to start
     get_valid_input("Press enter to start: ", str, [""])
+    # Section separator
+    print(SECTION_SEPARATOR)
     # start the round
     start_round(balance, initial_payment)
