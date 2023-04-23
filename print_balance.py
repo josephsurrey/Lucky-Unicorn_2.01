@@ -11,7 +11,7 @@ from check_for_sufficient_balance_to_continue import check_for_sufficient_balanc
 def print_balance(balance, token, initial_payment):
     # print the token that the user got
     print(f"You found a {token[0][0]}")
-    if token[0] != "donkey":
+    if token[0][0] != "donkey":
         # if the token is not a donkey, print how much the user won (rounded to 2 decimal places)
         print(f"You won ${token[0][1]:.2f}!")
     else:
