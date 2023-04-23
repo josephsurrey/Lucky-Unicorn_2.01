@@ -1,6 +1,6 @@
 Welcome to the charity game to raise funds for Doctors without Borders! Here are the instructions to play the game:
 
-Pay to play: Each player needs to pay $1 to start playing. The maximum amount you can spend per session is $10.
+Pay to play: Each round costs $1, so you must pay at least $1. The maximum amount you can spend per session is $10.
 Generate a token: Press Enter to play and the computer will randomly generate a token for you. The token can be a zebra, horse, donkey, or unicorn.
 Win or Lose: If the token is a unicorn, you win $5. If it is a zebra or horse, you win 50 cents. If it is a donkey, you do not win anything.
 Continue or Quit: After each round, you can choose to continue playing or quit the game. You can continue playing as long as you have not spent all your money.
